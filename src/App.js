@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import alanBtn from '@alan-ai/alan-sdk-web';
+import NewsCard from './components/NewsCards/NewsCard';
 
 const App = () =>  {
   const [newsArticles, setNewsArticles] = useState([]);
@@ -27,6 +28,7 @@ const App = () =>  {
         <p>
           React News App
         </p>
+        <NewsCard articles={newsArticles} activeArticle={activeArticle} />
    
       </header>
     </div>
